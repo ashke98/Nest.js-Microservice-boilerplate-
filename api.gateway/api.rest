@@ -1,0 +1,29 @@
+GET http://localhost:3000/account/hello
+
+###
+POST http://localhost:3000/account/sign-up
+content-type: application/json
+
+{
+    "name": "Mr Tester",
+    "username": "mr@tester2.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/account/sign-in
+content-type: application/json
+
+{
+    "username": "mr@tester.com",
+    "password": "1234562"
+}
+
+
+###
+GET http://localhost:3000/account/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTXIgVGVzdGVyIiwidXNlcm5hbWUiOiJtckB0ZXN0ZXIuY29tIiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNjUxODQyMzM1LCJleHAiOjE2NTE4NTIzMzV9.fwG8qxIBM4kKFGTUkLnsp3GhXttIBoNl6lD7G5qs8wE
+
+###
+GET http://localhost:3000/private-access
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTXIgVGVzdGVyIiwidXNlcm5hbWUiOiJtckB0ZXN0ZXIuY29tIiwicm9sZXMiOlsiYWRtaW4iXSwiaWF0IjoxNjUxODQyMzM1LCJleHAiOjE2NTE4NTIzMzV9.fwG8qxIBM4kKFGTUkLnsp3GhXttIBoNl6lD7G5qs8wE
